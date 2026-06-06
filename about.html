@@ -4,21 +4,21 @@ title: About
 description: Cecile Pearson (she/her) is a Los Angeles-based painter originally from Florida. Her work explores inheritance, ritual, and high-control systems.
 ---
 <div class="wrap page">
-  <h1 class="page__title">About</h1>
+  <h1 class="visually-hidden">About</h1>
   <div class="about">
     {%- assign p = site.data.dimensions.portrait -%}
     <figure class="about__portrait">
       <picture>
         <source type="image/webp"
                 srcset="{{ '/assets/img/about/portrait-400.webp' | relative_url }} 400w, {{ '/assets/img/about/portrait-800.webp' | relative_url }} 800w, {{ '/assets/img/about/portrait-1200.webp' | relative_url }} 1200w"
-                sizes="(max-width: 820px) 92vw, 22rem">
+                sizes="(max-width: 820px) 92vw, 45vw">
         <img src="{{ '/assets/img/about/portrait-800.jpg' | relative_url }}"
              width="{{ p.w }}" height="{{ p.h }}" loading="lazy" decoding="async"
              alt="Portrait of the artist Cecile Pearson">
       </picture>
     </figure>
     <div class="prose">
-      <p>Cecile Pearson (she/her) is a Los Angeles–based painter originally from Florida.</p>
+      <p><strong>Cecile Pearson</strong> (she/her) is a Los Angeles–based painter originally from Florida.</p>
       <p>Her work acknowledges what rigid systems leave behind once inherited beliefs have worn out or been survived. The paintings follow a three-layer compositional formula she developed to both satirize and earnestly perform the rigidity of ritual: abstract background, vertical striped midground, and a foreground subject contained in a box.</p>
       <p>For subjects, Cecile paints iconography surrounding inheritance like thorns, decorative knots, clenched teeth, and houses folding inward. The symbol shifts, but the question stays the same. What gets passed down, and what does it cost to carry it?</p>
       <p>Cecile was raised in and left a high-control Southern religion and now lives in Los Angeles. Her work lives in the distance between those two places, and what she's learned in the crossing. By constructing and following a self-imposed design system, she performs the logic she grew up inside. It's like a high-control religion. It's like a harsh city.</p>

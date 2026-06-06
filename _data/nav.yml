@@ -2,5 +2,5 @@
 # separately in _includes/nav.html.
 - { title: WORKS,   url: /works/ }
 - { title: ABOUT,   url: /about/ }
-- { title: CV,      url: /cv/cecile-pearson-cv.pdf, external: true }
+- { title: CV,      url: /cv/ }
 - { title: CONTACT, url: /contact/ }
