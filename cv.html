@@ -8,8 +8,8 @@ body_class: cv
 {%- assign pdf = '/cv/cecile-pearson-cv.pdf' | relative_url -%}
 <h1 class="visually-hidden">CV</h1>
 <div class="cv-page">
-  <object class="cv-frame" data="{{ pdf }}#view=FitH" type="application/pdf" aria-label="Curriculum vitae of Cecile Pearson">
-    <iframe class="cv-frame" src="{{ pdf }}" title="Curriculum vitae of Cecile Pearson" loading="lazy"></iframe>
+  <object class="cv-frame" data="{{ pdf }}#zoom=100" type="application/pdf" aria-label="Curriculum vitae of Cecile Pearson">
+    <iframe class="cv-frame" src="{{ pdf }}#zoom=100" title="Curriculum vitae of Cecile Pearson" loading="lazy"></iframe>
   </object>
   <p class="cv-actions">
     <a href="{{ pdf }}" target="_blank" rel="noopener">Open the CV in a new tab<span aria-hidden="true"> ↗</span></a>
