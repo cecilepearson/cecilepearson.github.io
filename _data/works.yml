@@ -1,0 +1,42 @@
+# Source of truth for the WORKS gallery.
+# order  : display order (matches the original site)
+# slug   : stable id; image files are assets/img/works/<slug>-<width>.<ext>
+# series  : "" | thorn | grief | paper  (drives the curatorial grouping labels)
+# Pixel dimensions + orientation are generated into _data/dimensions.yml by
+# scripts/build_images.py — do NOT hand-author them (canvas inches != image rotation).
+
+- { order: 1,  slug: arbor,                         title: "Arbor",                          year: 2026, medium: "Acrylic on canvas",                              dimensions: '20" × 16"', series: "" }
+- { order: 2,  slug: bougainvillea,                 title: "Bougainvillea",                  year: 2026, medium: "Acrylic on canvas",                              dimensions: '20" × 16"', series: "" }
+- { order: 3,  slug: house-on-fire,                 title: "House on fire",                  year: 2026, medium: "Acrylic on canvas",                              dimensions: '20" × 16"', series: "" }
+- { order: 4,  slug: thorn-1,                        title: "Thorn 1",                        year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '24" × 20"', series: thorn }
+- { order: 5,  slug: thorn-2,                        title: "Thorn 2",                        year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '28" × 22"', series: thorn }
+- { order: 6,  slug: thorn-3,                        title: "Thorn 3",                        year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '40" × 30"', series: thorn }
+- { order: 7,  slug: thorn-4,                        title: "Thorn 4",                        year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '40" × 30"', series: thorn }
+- { order: 8,  slug: thorn-5,                        title: "Thorn 5",                        year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '40" × 30"', series: thorn }
+- { order: 9,  slug: peak,                           title: "Peak",                           year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '40" × 30"', series: "" }
+- { order: 10, slug: broken-home,                    title: "Broken Home",                    year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '40" × 30"', series: "" }
+- { order: 11, slug: window-seat,                    title: "Window Seat",                    year: 2026, medium: "Acrylic and graphite on canvas",                  dimensions: '28" × 22"', series: "" }
+- { order: 12, slug: pew-back,                       title: "Pew Back",                       year: 2025, medium: "Acrylic on paper",                               dimensions: '8.5" × 5.5"', series: "" }
+- { order: 13, slug: south-florida-circus,           title: "South Florida Circus",           year: 2025, medium: "Watercolor and acrylic on canvas",                dimensions: '20" × 16"', series: "" }
+- { order: 14, slug: the-world-is-small-and-so-am-i, title: "THE WORLD IS SMALL AND SO AM I",  year: 2023, medium: "Acrylic, ink, pastel, graphite on canvas",        dimensions: '16" × 14"', series: "" }
+- { order: 15, slug: clarity,                        title: "Clarity",                        year: 2024, medium: "Acrylic, graphite, oil pastel, colored pencil on canvas", dimensions: '24" × 20"', series: "" }
+- { order: 16, slug: round,                          title: "Round",                          year: 2024, medium: "Acrylic and graphite on canvas",                  dimensions: '30" × 24"', series: "" }
+- { order: 17, slug: plastic-comfort,                title: "Plastic Comfort",                year: 2025, medium: "Acrylic, graphite, ink, oil pastel on canvas",     dimensions: '20" × 16"', series: "" }
+- { order: 18, slug: we-cant-handle-it,              title: "We can't handle it",             year: 2024, medium: "Acrylic and graphite on canvas",                  dimensions: '20" × 16"', series: "" }
+- { order: 19, slug: from-womb-to-womb,              title: "From womb to womb",              year: 2024, medium: "Acrylic on canvas",                              dimensions: '20" × 12"', series: "" }
+- { order: 20, slug: choking-on-taffy-candy,         title: "Choking on taffy candy",         year: 2024, medium: "Acrylic on canvas",                              dimensions: '20" × 12"', series: "" }
+- { order: 21, slug: little-kid,                     title: "Little kid",                     year: 2024, medium: "Acrylic on canvas",                              dimensions: '16" × 12"', series: "" }
+- { order: 22, slug: grief-left,                     title: "Grief Left",                     year: 2024, medium: "Acrylic, graphite, ink, oil pastel on canvas",     dimensions: '40" × 30"', series: grief }
+- { order: 23, slug: grief-center,                   title: "Grief Center",                   year: 2024, medium: "Acrylic, graphite, ink, oil pastel on canvas",     dimensions: '40" × 30"', series: grief }
+- { order: 24, slug: grief-right,                    title: "Grief Right",                    year: 2024, medium: "Acrylic, graphite, ink, oil pastel on canvas",     dimensions: '40" × 30"', series: grief }
+- { order: 25, slug: just-another-wedding-guest,     title: "Just another wedding guest",     year: 2024, medium: "Makeup, marker, graphite, acrylic on canvas",      dimensions: '28" × 22"', series: "" }
+- { order: 26, slug: the-time-we-carry,              title: "The time we carry",              year: 2024, medium: "Acrylic on canvas",                              dimensions: '24" × 20"', series: "" }
+- { order: 27, slug: i-need-to-be-extra-good,        title: "I NEED TO BE EXTRA GOOD",        year: 2023, medium: "Acrylic, ink, pastel, graphite on canvas",        dimensions: '24" × 20"', series: "" }
+- { order: 28, slug: pulpit-propaganda,              title: "Pulpit Propaganda",              year: 2025, medium: "Acrylic and colored pencil on canvas",            dimensions: '20" × 16"', series: "" }
+- { order: 29, slug: pays-his-way,                   title: "Pays his way",                   year: 2025, medium: "Acrylic and colored pencil on canvas",            dimensions: '24" × 30"', series: "" }
+- { order: 30, slug: church-couch,                   title: "Church Couch",                   year: 2025, medium: "Acrylic on paper",                               dimensions: '8.5" × 5.5"', series: "" }
+- { order: 31, slug: children-lose-things,           title: "Children Lose Things",           year: 2025, medium: "Acrylic, oil pastel, and colored pencil on paper", dimensions: '9" × 12" (framed 10" × 13")', series: paper }
+- { order: 32, slug: act-of-love,                    title: "Act of Love",                    year: 2025, medium: "Acrylic and colored pencil on paper",             dimensions: '9" × 12" (framed 10" × 13")', series: paper }
+- { order: 33, slug: love-to-hate,                   title: "Love to Hate",                   year: 2025, medium: "Acrylic and colored pencil on paper",             dimensions: '9" × 12" (framed 10" × 13")', series: paper }
+- { order: 34, slug: marriage-myth,                  title: "Marriage Myth",                  year: 2025, medium: "Acrylic and colored pencil on paper",             dimensions: '9" × 12" (framed 10" × 13")', series: paper }
+- { order: 35, slug: truth-defense-task-force,       title: "Truth Defense Task Force",       year: 2025, medium: "Acrylic and colored pencil on paper",             dimensions: '9" × 12" (framed 10" × 13")', series: paper }

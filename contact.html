@@ -1,0 +1,22 @@
+---
+layout: base
+title: Contact
+description: Contact Cecile Pearson — email, newsletter, and Instagram.
+---
+<div class="wrap page">
+  <h1 class="page__title">Contact</h1>
+  <div class="contact-list">
+    <div class="contact-item">
+      <span class="contact-item__label">Email</span>
+      <a class="contact-item__value" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-item__label">Newsletter</span>
+      <a class="contact-item__value" href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Subscribe<span class="ext" aria-hidden="true">↗</span></a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-item__label">Instagram</span>
+      <a class="contact-item__value" href="{{ site.instagram_url }}" target="_blank" rel="noopener">@{{ site.instagram }}<span class="ext" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</div>

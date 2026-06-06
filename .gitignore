@@ -1,0 +1,18 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Build-time only: full-res original masters fetched from the Wix CDN.
+# These are large (~69MB) and are NOT served — only optimized derivatives in
+# assets/img are committed. Keep a local/off-repo backup of this folder.
+scripts/_originals/
+
+# Bundler
+.bundle/
+vendor/
+
+# OS / editor
+.DS_Store
+*.log

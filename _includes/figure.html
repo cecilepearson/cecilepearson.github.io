@@ -1,0 +1,22 @@
+{%- comment -%} Params: w (work), dim (dimensions entry). {%- endcomment -%}
+{%- assign maxw = include.dim.webp | last -%}
+{%- assign full = '/assets/img/works/' | append: include.w.slug | append: '-' | append: maxw | append: '.webp' | relative_url -%}
+{%- assign fallback = '/assets/img/works/' | append: include.w.slug | append: '-800.jpg' | relative_url -%}
+<figure class="work work--{{ include.dim.orientation }}{% if include.w.series %} work--{{ include.w.series }}{% endif %}" id="{{ include.w.slug }}" style="--w: {{ include.dim.w }}; --h: {{ include.dim.h }};">
+  <a class="work__media" href="{{ full }}"
+     data-title="{{ include.w.title | escape }}, {{ include.w.year }}"
+     data-meta="{{ include.w.medium | escape }} · {{ include.w.dimensions | escape }}"
+     aria-label="View {{ include.w.title | escape }}, {{ include.w.year }} larger">
+    <picture>
+      <source type="image/webp" srcset="{% include srcset.html slug=include.w.slug widths=include.dim.webp ext='webp' %}" sizes="(max-width: 640px) 92vw, 46vw">
+      <img src="{{ fallback }}"
+           srcset="{% include srcset.html slug=include.w.slug widths=include.dim.jpg ext='jpg' %}" sizes="(max-width: 640px) 92vw, 46vw"
+           width="{{ include.dim.w }}" height="{{ include.dim.h }}" loading="lazy" decoding="async"
+           alt="{{ include.w.title }}, {{ include.w.year }} — {{ include.w.medium }}. Painting by Cecile Pearson.">
+    </picture>
+  </a>
+  <figcaption class="work__cap">
+    <span class="work__title">{{ include.w.title }}</span>, <span class="work__year">{{ include.w.year }}</span><br>
+    <span class="work__detail">{{ include.w.medium }} · {{ include.w.dimensions }}</span>
+  </figcaption>
+</figure>

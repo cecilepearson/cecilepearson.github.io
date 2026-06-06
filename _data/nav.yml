@@ -1,0 +1,6 @@
+# Primary navigation. The "Cecile Pearson" wordmark (home link) is rendered
+# separately in _includes/nav.html.
+- { title: WORKS,   url: /works/ }
+- { title: ABOUT,   url: /about/ }
+- { title: CV,      url: /cv/cecile-pearson-cv.pdf, external: true }
+- { title: CONTACT, url: /contact/ }

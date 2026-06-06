@@ -1,0 +1,18 @@
+---
+layout: base
+title: Home
+description: Cecile Pearson is a Los Angeles-based painter exploring inheritance, ritual, and what gets passed down.
+body_class: home
+---
+{%- assign dim = site.data.dimensions.arbor -%}
+<section class="hero">
+  <figure class="hero__fig">
+    <picture>
+      <source type="image/webp" srcset="{% include srcset.html slug='arbor' widths=dim.webp ext='webp' %}" sizes="(max-width: 640px) 92vw, 560px">
+      <img src="{{ '/assets/img/works/arbor-1200.jpg' | relative_url }}"
+           width="{{ dim.w }}" height="{{ dim.h }}" fetchpriority="high" decoding="async"
+           alt="Arbor, 2026 — painting by Cecile Pearson">
+    </picture>
+    <figcaption class="hero__cap"><span class="work__title">Arbor</span>, 2026 &nbsp;·&nbsp; Acrylic on canvas &nbsp;·&nbsp; 20" × 16"</figcaption>
+  </figure>
+</section>

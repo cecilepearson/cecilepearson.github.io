@@ -1,0 +1,10 @@
+{%- comment -%}
+Build a srcset string for a work. Params: slug, widths (array), ext.
+{%- endcomment -%}
+{%- assign parts = "" -%}
+{%- for wd in include.widths -%}
+  {%- assign url = '/assets/img/works/' | append: include.slug | append: '-' | append: wd | append: '.' | append: include.ext | relative_url -%}
+  {%- capture one -%}{{ url }} {{ wd }}w{%- endcapture -%}
+  {%- if forloop.first -%}{%- assign parts = one -%}{%- else -%}{%- assign parts = parts | append: ', ' | append: one -%}{%- endif -%}
+{%- endfor -%}
+{{- parts -}}

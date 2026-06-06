@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}">Cecile Pearson</a>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        {%- for item in site.data.nav -%}
+          <li>
+            <a href="{{ item.url | relative_url }}"
+               {%- if item.external %} target="_blank" rel="noopener"{% endif %}
+               {%- if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

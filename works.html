@@ -1,0 +1,31 @@
+---
+layout: base
+title: Works
+description: Paintings by Cecile Pearson — the Thorn series, the Grief triptych, works on canvas and paper, 2023–2026.
+---
+<div class="wrap">
+  <h1 class="page__title works-intro">Works</h1>
+  <div class="gallery">
+    {%- assign works = site.data.works -%}
+    {%- assign prev = "" -%}
+    {%- for w in works -%}
+      {%- assign dim = site.data.dimensions[w.slug] -%}
+      {%- if w.series != "" and w.series != prev -%}
+        {%- if w.series == "thorn" -%}{%- assign label = "Thorn series" -%}
+        {%- elsif w.series == "grief" -%}{%- assign label = "Grief — a triptych" -%}
+        {%- elsif w.series == "paper" -%}{%- assign label = "Works on paper" -%}
+        {%- else -%}{%- assign label = "" -%}{%- endif -%}
+        {%- if label != "" -%}<h2 class="series-label">{{ label }}</h2>{%- endif -%}
+        {%- if w.series == "grief" -%}<div class="triptych">{%- endif -%}
+      {%- endif -%}
+
+      {% include figure.html w=w dim=dim %}
+
+      {%- if w.series == "grief" -%}
+        {%- assign nextw = works[forloop.index] -%}
+        {%- if nextw == nil or nextw.series != "grief" -%}</div>{%- endif -%}
+      {%- endif -%}
+      {%- assign prev = w.series -%}
+    {%- endfor -%}
+  </div>
+</div>

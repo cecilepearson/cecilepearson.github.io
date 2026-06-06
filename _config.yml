@@ -1,0 +1,43 @@
+title: Cecile Pearson
+tagline: Painter
+description: >-
+  Cecile Pearson is a Los Angeles-based painter. Her work follows a three-layer
+  compositional formula exploring inheritance, ritual, and what gets passed down.
+url: "https://cecilepearson.github.io"
+baseurl: ""
+lang: en
+author: Cecile Pearson
+
+# Contact / social (used in meta + footer)
+email: cecileartinfo@gmail.com
+instagram: fathercecile
+instagram_url: "https://www.instagram.com/fathercecile/"
+newsletter_url: "https://mailchi.mp/4c1674e06dfe/subscribe"
+cv_url: "/cv/cecile-pearson-cv.pdf"
+
+# No theme, no plugins — fully hand-built so the local Jekyll 4 build and the
+# GitHub Actions build are identical.
+theme: null
+plugins: []
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Pretty URLs without .html
+permalink: pretty
+
+exclude:
+  - scripts/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Website.zip
+  - vendor/
+  - .github/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/meta/og-image.jpg
